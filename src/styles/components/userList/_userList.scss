@@ -1,0 +1,36 @@
+.user-list-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & li {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $font-content-medium;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+    color: $font-primary-color;
+    border-bottom: 1px solid $font-primary-color;
+
+
+    &:hover {
+      background-color: rgba($row-hover-color, 0.7);
+    }    
+  }
+
+  &-active {
+    background-color: $row-background-active !important;
+    border-top: 1px solid $row-background-active !important;
+    border-bottom: 0 !important;
+  }
+}
